@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{909EA675-9471-44C5-9910-59A710BCBE44}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MediaStore</RootNamespace>
+    <AssemblyName>MediaStore</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AterkopForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AterkopForm.Designer.cs">
+      <DependentUpon>AterkopForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Butik.cs" />
+    <Compile Include="Order.cs" />
+    <Compile Include="SearchSupport.cs" />
+    <Compile Include="CompactSearchForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CompactSearchForm.Designer.cs">
+      <DependentUpon>CompactSearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataFil.cs" />
+    <Compile Include="InleveransForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InleveransForm.Designer.cs">
+      <DependentUpon>InleveransForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LagringsAdapter.cs" />
+    <Compile Include="Orderrad.cs" />
+    <Compile Include="Produkt.cs" />
+    <Compile Include="ProduktForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProduktForm.designer.cs">
+      <DependentUpon>ProduktForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SearchForm.designer.cs">
+      <DependentUpon>SearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistik.cs" />
+    <Compile Include="StoreForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StoreForm.Designer.cs">
+      <DependentUpon>StoreForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AterkopForm.resx">
+      <DependentUpon>AterkopForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompactSearchForm.resx">
+      <DependentUpon>CompactSearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InleveransForm.resx">
+      <DependentUpon>InleveransForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProduktForm.resx">
+      <DependentUpon>ProduktForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SearchForm.resx">
+      <DependentUpon>SearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StoreForm.resx">
+      <DependentUpon>StoreForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagramBusinessLayer.cd" />
+    <None Include="ClassDiagramPresentationLayer.cd" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,17 @@
+1;1;Toto - The Seventh One;89;20
+2;1;Toto - IV;99;16
+3;0;Nickelback - No Fixed Adress;199;118
+4;1;Nickelback - All the Right Reasons;149;97
+5;2;Oblivion;149;84
+6;2;Shrek;49;3
+7;2;Noah 3D;199;60
+8;2;Alien;49;16
+9;3;Möss och människor;99;43
+10;3;Metro 2033;49;8
+11;0;Tillsammans;89;36
+12;3;Wool;19;108
+13;4;Ultima Online;99;299
+14;4;Zork;139;75
+15;4;Guild of Theives;199;89
+16;4;Corruption;77;0
+17;3;Tåg;120;0

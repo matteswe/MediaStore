@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MediaStore.AterkopForm" Collapsed="true">
+    <Position X="4.75" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AgBAAAQAACAQAJQAAACAAAACAAEAEAAAACAAwAxEBAE=</HashCode>
+      <FileName>AterkopForm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="aterkopCompactSearchForm" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MediaStore.Butik" Collapsed="true">
+    <Position X="15.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAIAAJAEAABBDQAAAAAIAAAAAAAACAAIAgA=</HashCode>
+      <FileName>Butik.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MediaStore.CompactSearchForm" Collapsed="true">
+    <Position X="8.5" Y="1.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAIEAAAAQCFBAlAAIQKBFACKAAAAAAAgAgAKAgAAAAA=</HashCode>
+      <FileName>CompactSearchForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MediaStore.InleveransForm" Collapsed="true">
+    <Position X="4.75" Y="1.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AABAACQAACAQAJQAAASAAAACAAAAFAAAACACwABAAAE=</HashCode>
+      <FileName>InleveransForm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="inlevCompactSearchForm" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MediaStore.ProduktForm" Collapsed="true">
+    <Position X="4.75" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAASAACAAIJAgAACABAACIAAAAQAAAAAAAAEkAAA=</HashCode>
+      <FileName>ProduktForm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="formStatus" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MediaStore.SearchEventArgs" Collapsed="true">
+    <Position X="10.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SearchSupport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MediaStore.SearchForm" Collapsed="true">
+    <Position X="8.5" Y="3.5" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="MediaStore.SearchForm.SearchFlags" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>SearchForm.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAEEAAQAKgAAlIAgAKEAAADKAAAAAIAAqMCKQAgAAQ=</HashCode>
+      <FileName>SearchForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MediaStore.StoreForm" Collapsed="true">
+    <Position X="12.25" Y="0.5" Width="2" />
+    <NestedTypes>
+      <Enum Name="MediaStore.StoreForm.ProgramView" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>StoreForm.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AsgkBS8gBiUhDDRMgQSgAqQCfFIBCOASQGHDgyEAQEE=</HashCode>
+      <FileName>StoreForm.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="butik" />
+      <Field Name="statCompactSearchForm" />
+      <Field Name="lagerSearchForm" />
+      <Field Name="butikSearchForm" />
+    </ShowAsAssociation>
+  </Class>
+  <Enum Name="MediaStore.ProduktFormStatus" Collapsed="true">
+    <Position X="4.75" Y="5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AQAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ProduktForm.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
